@@ -96,7 +96,20 @@ We create pubs containing the paramaterized time evolution circuit, observables 
 ## Results and Post Processing
 
 $\delta t = \frac{5\pi}{2}$
-values of h can vary in the list `[0   0.14279967 0.28559933 0.428399 0.57119866 0.71399833 0.856798 0.99959766 1.14239733 1.28519699 1.42799666 1.57079633]`
+
+$h$ varies as `[0 0.14279967 0.28559933 0.428399 0.57119866 0.71399833 0.856798 0.99959766 1.14239733 1.28519699 1.42799666 1.57079633]`
+
+Average magnetization is computed as 
+
+
+$$
+M_{z} = \frac{1}{n} \sum_{i}^{n} M_z^i
+$$
+
+### Results 
+Graphs are made using `seaborn`,`matplotlib`
+
+
 
 
 
