@@ -43,7 +43,7 @@ $$
 H = \sum_{\langle i,j \rangle}\left(J_x X_iX_{j} + J_y Y_iY_{j} + J_z Z_iZ_{j} + hX_i \right)
 $$
 
-#### Anisotrophy
+### Anisotrophy
 We define the anisotrophy to be XXZ where $J=1$ and $\Delta = J_z/J$
 
 So our hamiltonian further changes to,
@@ -83,6 +83,20 @@ Once we have our time evolution defined we get a trotterized approximation and s
 
 I used the `LieTrotter()` function from qiskit [[4]](https://docs.quantum.ibm.com/api/qiskit/qiskit.synthesis.LieTrotter) to obtain the approximation, and `synthesize` [[5]](https://docs.quantum.ibm.com/api/qiskit/synthesis) to get our final evolution circuit.
 
-### 
+![render of the circuit](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/hi.png)
+
+### Observables for measuring 
+
+Now to measure $M_{z}$ we must define our observables `SparsePauliOp.from_sparse_list()` [[2]](https://docs.quantum.ibm.com/api/qiskit/qiskit.quantum_info.SparsePauliOp) can be used to generate observables of form $I..ZII..I$.  
+
+### Generating PUBs
+
+We create pubs containing the paramaterized time evolution circuit, observables and value of parameter $\delta t$ 
+
+## Results and Post Processing
+
+
+
+
 
 
