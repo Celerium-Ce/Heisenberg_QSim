@@ -122,9 +122,7 @@ Graphs are made using `seaborn`,`matplotlib`
 ![IBM_Sherbrooke](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/IBM_Sherbrooke_2.png)
 
 
-
-
-
+The code is my solution to lab 4 of the IBM QGSS '24 with some changes and explainations to complete it as a standalone project.
 
 
 
