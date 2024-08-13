@@ -106,8 +106,22 @@ $$
 M_{z} = \frac{1}{n} \sum_{i}^{n} M_z^i
 $$
 
+### Pass Manager Settings
+
+`optimization_level=3` [[6]](https://docs.quantum.ibm.com/guides/configure-error-suppression)
+
 ### Results 
 Graphs are made using `seaborn`,`matplotlib`
+
+![IBM_Kyoto](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/IBM_Sherbrooke.png)
+
+![IBM_Osaka](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/IBM_Osaka.png)
+
+![IBM_Sherbrooke](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/IBM_Sherbrooke.png)
+
+![IBM_Sherbrooke](https://github.com/Celerium-Ce/Heisenberg_QSim/blob/main/imgs/IBM_Sherbrooke_2.png)
+
+
 
 
 
