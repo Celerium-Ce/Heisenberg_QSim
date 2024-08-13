@@ -78,7 +78,11 @@ $$
 U(t) = \exp \left( \sum_{\langle i,j \rangle}\left( X_iX_{j} + Y_iY_{j} + \Delta Z_iZ_{j} + hX_i \right) \right)
 $$
 
-We use the `PauliEvolutionGate()` function from qiskit, to obtain action of U(t) for some defined parameter $\delta t$
+We use the `PauliEvolutionGate()` function from qiskit [[3]](https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.PauliEvolutionGate), to obtain action of $U(t)$ for some defined parameter $\delta t$,
+Once we have our time evolution defined we get a trotterized approximation and synthesize it to a quantum circuit.
 
+I used the `LieTrotter()` function from qiskit [[4]](https://docs.quantum.ibm.com/api/qiskit/qiskit.synthesis.LieTrotter) to obtain the approximation, and `synthesize` [[5]](https://docs.quantum.ibm.com/api/qiskit/synthesis) to get our final evolution circuit.
+
+### 
 
 
