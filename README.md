@@ -52,6 +52,10 @@ $$
 H = \sum_{\langle i,j \rangle}\left( X_iX_{j} + Y_iY_{j} + \Delta Z_iZ_{j} + hX_i \right)
 $$
 
-We will be running our simulations for two cases Anisotrophic $\Delta = -5$ and XXX phase $\Delta = 1$
+We will be running our simulations for two cases, Anisotrophic with $\Delta = -5$ and Isotrophic or XXX phase with $\Delta = 1$
 
+## Implementation 
 
+### Mapping spin chain to physical qubits
+
+We define a 
