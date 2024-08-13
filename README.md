@@ -28,7 +28,7 @@ $$
 
 
 $$
-\therefore  H =  \sum_{\langle i,j \rangle} \left( J_x S_i^x \cdot S_j^x + J_y S_i^y \cdot S_j^y + J_z S_i^z \cdot S_j^z \right)
+\therefore \quad  H =  \sum_{\langle i,j \rangle} \left( J_x S_i^x \cdot S_j^x + J_y S_i^y \cdot S_j^y + J_z S_i^z \cdot S_j^z \right)
 $$
 
 We can now map $S_i^xS_j^x = \frac{1}{2} \sigma_i^x \sigma_j^x$, $S_i^yS_j^y = \frac{1}{2} \sigma_i^y \sigma_j^y$ , $S_i^zS_j^z = \frac{1}{2} \sigma_i^z \sigma_j^z$ ,
@@ -58,4 +58,27 @@ We will be running our simulations for two cases, Anisotrophic with $\Delta = -5
 
 ### Mapping spin chain to physical qubits
 
-We define a 
+We define a coupling map using the `CouplingMap.from_line()` from qiskit.
+
+### Generating the hamlitonian in form of pauli operators
+
+`build_layered_hamiltonian(num_spins, anisotropy, h)` is the function which returns our hamiltonian in SparsePauliOps [[2]](https://docs.quantum.ibm.com/api/qiskit/qiskit.quantum_info.SparsePauliOp) customized on the given parameters.
+
+### Obtaining the time evolution circuit
+
+The time evolution operator of a hamiltonian is given by the formula,
+
+$$
+U(t) = e^{-iHt} ,
+$$
+
+and hence the time evolution operator for our hamiltonian becomes,
+
+$$
+U(t) = \exp \left( \sum_{\langle i,j \rangle}\left( X_iX_{j} + Y_iY_{j} + \Delta Z_iZ_{j} + hX_i \right) \right)
+$$
+
+We use the `PauliEvolutionGate()` function from qiskit, to obtain action of U(t) for some defined parameter $\delta t$
+
+
+
